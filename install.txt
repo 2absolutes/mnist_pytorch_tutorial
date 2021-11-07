@@ -1,0 +1,23 @@
+Python 3 is recommended for this tutorial.
+
+Depending on your Linux distro, some dependencies like git and python3 might already be present on your system
+
+Ubuntu/Linux:
+	sudo -H apt-get install git
+	sudo -H apt-get install python3
+	sudo -H apt-get install python3-pip
+	sudo -H pip3 install matplotlib
+	sudo -H pip3 install jupyter
+
+	# pytorch gpu version: only if you have an nvidia gpu (i.e CUDA device), otherwise install the cpu version
+	pip3 install --upgrade torch torchvision torchaudio
+
+	# pytorch cpu version: if you have don't have a gpu. Otherwise install the gpu version
+	pip3 install torch==1.10.0+cpu torchvision==0.11.1+cpu torchaudio==0.10.0+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html
+
+
+TEST YOUR INSTALLATION:
+    $ git clone https://github.com/2absolutes/mnist_pytorch_tutorial.git
+    $ cd mnist_pytorch_tutorial
+    $ jupyter notebook
+    => A browser should open, open the mnist_pytorch.ipynb notebook and run the cells
